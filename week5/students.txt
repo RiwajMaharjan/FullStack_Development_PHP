@@ -1,0 +1,3 @@
+Gobby|riwaj@gmail.com|react,next
+Somethingherald|riwaj@gmail.com|react,next
+Somethingherald|herald@gmail.com|react,next,zig

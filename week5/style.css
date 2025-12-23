@@ -1,0 +1,152 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #4a90e2;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #4a90e2;
+    margin: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin-bottom: 30px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #357ab8;
+}
+
+
+form {
+    background-color: #fff;
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+input[type="text"], input[type="file"], button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ab8;
+}
+
+
+p.message {
+    text-align: center;
+    font-weight: bold;
+    color: #27ae60;
+    margin-top: 10px;
+}
+
+
+
+
+.students-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+
+.student-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+}
+
+.student-card:hover {
+    transform: translateY(-3px);
+}
+
+
+.skills-list {
+    display: flex;
+    gap: 0.5rem;
+    
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.skills-list li{
+    background: #357ab8;
+    padding: 8px 16px;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.student-card strong {
+    color: #4a90e2;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 13px;
+    display: block;
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
+
+
+
+
+@media (max-width: 500px) {
+    .students-container {
+        grid-template-columns: 1fr;
+    }
+    form {
+        width: 90%;
+    }
+}
