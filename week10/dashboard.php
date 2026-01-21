@@ -31,7 +31,7 @@ if (isset($_SESSION['user_id'])) {
 <body>
     <h1>Welcome to my site</h1>
     <?php if ($user_email): ?>
-        <p>Logged In User : <?php echo htmlspecialchars($user_email, ENT_QUOTES, 'UTF-8'); ?></p>
+        <p>Logged In User : <?php echo htmlspecialchars($user_email); ?></p>
         <form method="POST">
             <button type="submit" name="logout">Logout</button>
         </form>

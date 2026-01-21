@@ -7,7 +7,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
     $password = $_POST['password'] ?? '';
 
-    if (!$email) {
+    
+    if (!$email && !$password) {
+        $message = 'All fields required';
+
+    }elseif (!$email) {
         $message = "Invalid email format.";
     } elseif (empty($password) || strlen($password) < 8) {
         $message = "Password must be atleast 8 characters.";
