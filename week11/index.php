@@ -3,12 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="Your Name - Professional Web Services">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Professional web design, development, and
+  SEO services to help your business grow online with modern solutions.">
+  <meta property="og:title" content="Riwaj - Professional Web Services">
   <meta property="og:description" content="Professional web design, development,
   and SEO services to help your business grow online.">
   <meta property="og:image"
   content="http://localhost/workshop_11/optimized-image.jpg">
+  <meta property="og:type" content="website">
   <title>Riwaj - Professional Web Services</title>
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
   <meta property="og:url" content="http://localhost/workshop_11/">
@@ -32,8 +35,8 @@
     </nav>
   </header>
 
-  <main>
-    <section class="content">
+  <main id="home">
+    <section class="content" id="about">
       <h2>About Our Company</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -45,7 +48,7 @@
       alt="Modern office workspace showcasing our professional team environment"
 
       loading="lazy"
-
+      decoding="async"
       width="800"
 
       height="600">
